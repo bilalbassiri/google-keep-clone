@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bilal Bassiri">
+    <meta name="keywords" content="">
+    <meta name="description" content="Google keep clone">
+    <title>Google Keep Clone</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/google-keep-style.css">
+</head>
+<body>
+    <div class="note-taker" id="note__Paper" style="background-color: white;">
+        <input type="text" placeholder="Title" class="title-input" id="note__Title__Input" autocomplete="off">
+        <textarea class="text-area-style" id="text__Area" placeholder="Take a note..."></textarea>
+        <div class="main-helpers" id="top__Helpers">
+            <i class="material-icons waves-effect waves-light" role="button" id="add__Btn">add</i>
+        </div>
+        <div class="palette-colors A12fgvsc" id="palette__Colors__Id">
+            <div class="palette-item" style="background-color: white;"><i class='material-icons checked-color'>check</i></div>
+            <div class="palette-item" style="background-color: #ebffd4;"></div>
+            <div class="palette-item" style="background-color: #ffd9d9;"></div>
+            <div class="palette-item" style="background-color: rgb(236, 219, 255);"></div>
+            <div class="palette-item" style="background-color:#F7FBC0;"></div>
+            <div class="palette-item" style="background-color: #ffd4ec;"></div>
+            <div class="palette-item" style="background-color: #FFF0C8;"></div>
+            <div class="palette-item" style="background-color: #C7FFD8;"></div>
+            <div class="palette-item" style="background-color: #cbdcff;"></div>
+        </div>
+        <div class="help-icons" id="bottom__Helpers">
+            <i class="material-icons palette A12fgvsc waves-effect waves-light" role="button" id="palette__Btn">brush</i>
+            <i class="material-icons waves-effect waves-dark" role="button" id="refresh__Btn">refresh</i>
+        </div>
+    </div>
+    <div class="edit-mode-bg" id="edit___Mode__Bg"></div>
+    <h2 class="notes-head">NOTES</h2>
+    <div class="notes-container container" id="notes__ParentElementContainer">
+
+    </div>
+    <footer role="doc-footnote" class="footer">
+        <a href="https://www.linkedin.com/in/bilal-bassiri/" target="_blank">
+            Built by Bilal Bassiri
+        </a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script type="module" src="./js/main.js"> </script>
+</body>
+</html>
